@@ -1,0 +1,174 @@
+{
+	"variables": [],
+	"info": {
+		"name": "revolut",
+		"_postman_id": "7d714f3e-d86b-86ac-a76e-4c2963150ae4",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get account by id",
+			"request": {
+				"url": "http://localhost:7000/account/895a854c-8ac4-4578-b5dc-e9dc1649299a",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get transfer by id",
+			"request": {
+				"url": "http://localhost:7000/account/895a854c-8ac4-4578-b5dc-e9dc1649299a",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get account list",
+			"request": {
+				"url": "http://localhost:7000/accounts",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "save account",
+			"request": {
+				"url": "http://localhost:7000/account",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "fsdf",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "sadfds",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "money",
+							"value": "10",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "currencyCode",
+							"value": "EUR",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "save Transfer",
+			"request": {
+				"url": "http://localhost:7000/transfer",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "senderAccountNumber",
+							"value": "c435d9b0-6929-40e0-bedd-60c7ca4e3346",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "receiverAccountNumber",
+							"value": "6ea0bf51-1941-461d-8033-dd7b166ffed6",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "money",
+							"value": "10",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete assignment",
+			"request": {
+				"url": "http://localhost:7000/account",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "fsdf",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "sadfds",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "money",
+							"value": "10",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "currencyCode",
+							"value": "EUR",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
